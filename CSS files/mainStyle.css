@@ -1,0 +1,94 @@
+body {
+  background-color: goldenrod;
+  position: relative;
+}
+
+.odd_note {
+  background-color: pink;
+  padding: 10px;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+  margin: 10;
+  float: left;
+  transform: rotate(-4deg);
+}
+
+.even_note {
+  background-color: aquamarine;
+  padding: 10px;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+  margin: 10;
+  float: left;
+  transform: rotate(4deg);
+}
+
+.odd_note:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px gray;
+}
+
+.even_note:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px gray;
+}
+.note_title {
+  font-family: cursive;
+}
+
+.odd_textarea {
+  font-family: Garamond;
+  font-size: medium;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: pink;
+  resize: none;
+  text-align: left;
+}
+
+.odd_textarea:focus {
+  outline: none;
+}
+
+.even_textarea {
+  font-family: Garamond;
+  font-size: medium;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: aquamarine;
+  resize: none;
+}
+
+.even_textarea:focus {
+  outline: none;
+}
+
+.new_note {
+  right: 20;
+  bottom: 20;
+  position: absolute;
+}
+
+.delete-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.delete-icon:hover {
+  transform: scale(1.5);
+  opacity: 0.5;
+}
+#add_note_image {
+  bottom: 10px;
+  right: 10px;
+}
+#add_note_image:hover {
+  transform: scale(1.2);
+}
